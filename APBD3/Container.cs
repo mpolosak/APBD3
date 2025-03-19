@@ -10,7 +10,7 @@ public abstract class Container
     public double Capacity { get; set; }
     
     public void Empty() => MassOfLoad = 0;
-    public void Load(double mass)
+    public virtual void Load(double mass)
     {
         if (mass > Capacity)
         {
