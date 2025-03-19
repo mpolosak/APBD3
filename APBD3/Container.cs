@@ -14,7 +14,7 @@ public abstract class Container
     {
         if (mass > Capacity)
         {
-            throw new Exception("Capacity exceeded");
+            throw new OverfillException();
         }
         MassOfLoad = mass;
     }
