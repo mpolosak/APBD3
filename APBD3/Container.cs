@@ -9,7 +9,7 @@ public abstract class Container
     public string SerialNumber { get; set; } = string.Empty;
     public double Capacity { get; set; }
     
-    public void Empty() => MassOfLoad = 0;
+    public virtual void Empty() => MassOfLoad = 0;
     public virtual void Load(double mass)
     {
         if (mass > Capacity)
