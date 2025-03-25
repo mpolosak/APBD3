@@ -2,6 +2,7 @@
 
 public class LiquidContainer : Container, IHazardNotifier
 {
+    public override string ContainerType { get; } = "L";
     public bool HazardousCargo { get; private set; }
     private readonly List<IHazardListener> _hazardListeners = new();
     public override void Load(double mass)
